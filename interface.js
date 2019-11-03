@@ -1,6 +1,6 @@
 var allIngredients = [];
 var allRestrictions = [];
-var myPreference;
+var myPreference = [];
 var recommendList = [];
 
 $(document).ready(function(){
@@ -188,7 +188,7 @@ function isValid(index){
 }
 
 function isPref(index){
-    return reciP[index].preference == myPreference;
+    return reciP[index].preference == myPreference[0];
 }
 
 function linktoURL(index){
@@ -201,19 +201,47 @@ window.onload = function(){
     for (let i = 0; i < Whatever.length; i++){
         let restrest = "";
         for (let j = 0; j < Whatever[i].restriction.length - 1; j++){
-            restrest += Whatever[i].restriction[j] + ", ";
+            restrest += mapRestriction(Whatever[i].restriction[j]) + ", ";
         }
-        restrest += Whatever[i].restriction[Whatever[i].restriction.length - 1];
+        restrest += mapRestriction(Whatever[i].restriction[Whatever[i].restriction.length - 1]);
         r.innerHTML += "<div class=\"col-sm-4\">\n" +
             "<div class=\"thumbnail\">\n" +
             "<p><strong>" + Whatever[i].name +"</strong></p>\n"+
             "<p>" + restrest + "</p>\n" +
-            "<p>" + Whatever[i].preference + "</p>\n" +
+            "<p>" + mapPreferences(Whatever[i].preference) + "</p>\n" +
             "<button class=\"btn\" onclick=\"linktoURL("+ i + ")\">Link to Recipe</button>\n" +
             "</div>\n" +
             "</div>\n";
     }
 };
+
+function mapRestriction(oldRest){
+    if (oldRest == "lactose"){
+        return "Lactose-Free";
+    } else if (oldRest == "vegetarian"){
+        return "Vegetarian";
+    } else if (oldRest == "peanut"){
+        return "Peanut-Free";
+    } else if (oldRest == "kosher"){
+        return "Kosher";
+    } else {
+        return "Halal";
+    }
+}
+
+function mapPreferences(oldPref){
+    if (oldPref == "chinese"){
+        return "Chinese";
+    } else if (oldPref == "italian"){
+        return "Italian";
+    } else if (oldPref == "mexican"){
+        return "Mexican";
+    } else if (oldPref == "southern"){
+        return "Souther";
+    } else {
+        return "Thai";
+    }
+}
 
 var reciP = [
     {
