@@ -1,3 +1,8 @@
+var allIngredients = [];
+var allRestrictions = [];
+var myPreference;
+var recommendList = [];
+
 $(document).ready(function(){
     // Initialize Tooltip
     $('[data-toggle="tooltip"]').tooltip();
@@ -121,27 +126,13 @@ function selectionArray(){
     const checkboxesPref = document.getElementsByName("preference");
     for(let i = 0; i < checkboxesPref.length; i++) {
         if (checkboxesPref[i].checked) {
-<<<<<<< HEAD
-            preference.push(checkboxesPref[i].value);
+            myPreference.push(checkboxesPref[i].value);
         }
     }
 
-    // var x = "";
-    // for (let i = 0; i < preference.length; i++){
-    //     x = x + preference[i];
-    // }
-    // alert(x);
-
-=======
-            myPreference.push("Chinese");
-        } else {
-            myPreference.push("Chinese");
-        }
-    }
-
->>>>>>> 539d683a15fd46af4b021e23eb499d0cd10b7d7a
     recommend();
-    window.open("recipes.html", '_self');
+    let w = window.open("recipes.html");
+    w.Whatever = recommendList;
 }
 function uncheckAll() {
     $('input[type="checkbox"]:checked').prop('checked', false);
@@ -155,11 +146,6 @@ function shuffle(array) {
 }
 
 function recommend(){
-    alert(allIngredients.length);
-    selectValid();
-}
-
-function selectValid(){
     for (let i = 0; i < reciP.length; i++){
         if (isValid(i)){
             if (isPref(i)) {
@@ -169,7 +155,6 @@ function selectValid(){
             }
         }
     }
-    alert(recommendList.length);
 }
 
 function isValid(index){
@@ -207,32 +192,28 @@ function isPref(index){
 }
 
 function linktoURL(index){
-    let temp = recommendList[index].link.substring(5);
+    let temp = Whatever[index].link.substring(5);
     window.open(temp);
 }
 
 window.onload = function(){
     let r = document.getElementById('KungPao');
-    for (let i = 0; i < recommendList.length; i++){
+    for (let i = 0; i < Whatever.length; i++){
         let restrest = "";
-        for (let j = 0; j < recommendList[i].restriction.length - 1; j++){
-            restrest += recommendList[i].restriction[j] + ", ";
+        for (let j = 0; j < Whatever[i].restriction.length - 1; j++){
+            restrest += Whatever[i].restriction[j] + ", ";
         }
-        restrest += recommendList[i].restriction[recommendList[i].restriction.length - 1];
+        restrest += Whatever[i].restriction[Whatever[i].restriction.length - 1];
         r.innerHTML += "<div class=\"col-sm-4\">\n" +
             "<div class=\"thumbnail\">\n" +
-            "<p><strong>" + recommendList[i].name +"</strong></p>\n"+
+            "<p><strong>" + Whatever[i].name +"</strong></p>\n"+
             "<p>" + restrest + "</p>\n" +
-            "<p>" + recommendList[i].preference + "</p>\n" +
+            "<p>" + Whatever[i].preference + "</p>\n" +
             "<button class=\"btn\" onclick=\"linktoURL("+ i + ")\">Link to Recipe</button>\n" +
             "</div>\n" +
             "</div>\n";
     }
 };
-
-function getRealPreference(){
-
-}
 
 var reciP = [
     {
@@ -743,10 +724,5 @@ var reciP = [
     "restriction" : ["lactose", "vegetarian", "halal"]
 }
 ];
-
-var allIngredients = [];
-var allRestrictions = [];
-var myPreference;
-var recommendList = [];
 
 var ingredientList = ["apples", "avocados", "bacon", "baking powder", "baking soda", "basil", "bean sprouts", "beans", "beef roast", "beef sirloin", "beer",  "bell peppers", "black bean sauce", "black beans", "bread", "broccoli", "brown sugar", "butter", "cabbage", "canola oil", "cardamom", "cashews", "cayenne pepper", "cheese", "chestnuts", "chicken breast", "chicken broth", "chicken stock", "chili oil", "chili paste", "chili pepper", "chili powder", "chives", "cilantro", "cinnamon", "coconut", "coconut milk", "coffee", "condensed milk", "corn", "cornstarch", "cumin", "eggplant", "eggs", "feta cheese", "fish sauce", "flank steak", "flour", "garlic", "ginger", "green onions", "ground pork", "hamburger buns", "heavy cream", "honey", "hot sauce", "kidney beans", "lemon", "lime", "mango", "mayonnaise", "milk", "molasses", "mushrooms", "mustard", "nutmeg", "oil", "olive oil", "onions", "orange juice", "orange zest", "oregano", "oyster sauce", "parsley", "pasta", "peaches", "peanut butter", "peanuts", "pepperoncini peppers", "pesto", "pine nuts", "pork", "pork loin", "pork roast", "potatoes", "raisins", "ranch", "red pepper flakes", "rice", "rice noodles", "rice wine", "salsa", "salt", "sausage", "sesame oil", "sesame seeds", "shallots", "shrimp", "soy sauce", "spaghetti sauce", "spinach", "sugar", "sweet potatoes", "tamarind paste", "tomato sauce", "tomatoes", "tortilla chips", "tortillas", "turmeric", "turkey", "vanilla", "vegetable oil", "vinegar", "white wine", "wonton wrappers", "worcestershire sauce"];
