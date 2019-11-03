@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!--Import Font Awesome-->
+    <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
+
+    <!-- Input head content beyond this point -->
+    <title>eCook</title>
+    <link type="text/css" rel="stylesheet" href="style.css" media="screen">
+
+
+</head>
+<body>
+<script type="text/javascript" src="interface.js"></script>
+
+<div class = "jumbotron">
+        <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>eCook</h1>
+                <h4>Season your lifestyle</h4>
+                <h5>Start by clicking the options to the right...</h5>
+                <div class="purposebutton">
+                    <br><br><a href="#purpose" class="btn btn-default btn-lg">Our Purpose</a>
+                </div>
+            </div>
+
+                <div class="diamond1">
+                    <a href="#diet"><img src="images/dietaryRestrictionsA.PNG" alt="Dietary Restrictions" height="300px"></a>
+                </div>
+
+
+                <div class="diamond2">
+                    <a href="#ingredients"><img src="images/ingredientsA.PNG" alt="Ingredients" height="300px"></a>
+                </div>
+
+<!--                <div class="diamond3">-->
+<!--                    <a href="#purpose"><img src="images/purposeA.PNG" alt="Purpose" height="300px"></a>-->
+<!--                </div>-->
+
+                <div class="diamond4">
+                    <a href="#preference"><img src="images/preferencesA.PNG" alt="Preferences" height="300px"></a>
+                </div>
+
+        </div>
+
+        </div>
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">eCook</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#diet">DIETARY RESTRICTIONS</a></li>
+                    <li><a href="#preference">PREFERENCES</a></li>
+                    <li><a href="#ingredients">INGREDIENTS</a></li>
+                    <li><a href="#purpose">PURPOSE</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</div>
+<!--DIET SECTION-->
+<div id = "diet">
+    <div class = "container-fluid">
+        <div class = "row">
+            <h2>DIETARY RESTRICTIONS</h2><br><br>
+            <div class="checkbox">
+            <label><input type="checkbox" class="form-check-input" name="diet" value="halal"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Halal<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input type="checkbox" class="form-check-input" name="diet" value="kosher"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Kosher<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input type="checkbox" class="form-check-input" name="diet" value="lactose"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Lactose Intolerant<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input type="checkbox" class="form-check-input" name="diet" value="peanut"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Peanut Allergy<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input type="checkbox" class="form-check-input" name="diet" value="vegetarian"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Vegetarian<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </div>
+</div>
+<div id = "preference">
+    <div class = "container-fluid">
+        <div class = "row">
+            <h2>PREFERENCES</h2><br><br>
+            <div class="checkbox">
+                <label><input type="checkbox" class="form-check-input" name="preference" value="chinese"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chinese<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="preference" value="italian"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Italian<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="preference" value="mexican"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Mexican<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="preference" value="southern"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Southern<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="preference" value="thai"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Thai<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </div>
+</div>
+<div id = "ingredients">
+    <div class = "container-fluid">
+        <div class = "row">
+            <h2>INGREDIENTS</h2><br><br>
+<!--            <form method="post" action="/Tests/Post">-->
+<!--                <fieldset>-->
+                    <legend>Dairy</legend>
+                    <div class="checkbox">
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="butter"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Butter<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="cheese"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Cheese<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="coconut milk"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Coconut Milk<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="condensed milk"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Condensed Milk<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="eggs"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Eggs<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="feta cheese"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Feta Cheese<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="heavy cream"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Heavy Cream<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="milk"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Milk<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                    </div>
+                        <br><br><br><legend>Fruits</legend>
+                    <div class="checkbox">
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="apples"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Apples<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="avocados"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Avocados<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="lemon"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Lemon<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="lime"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Lime<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="mango"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Mango<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="orange zest"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Orange Zest<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="orange juice"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Orange Juice<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="peaches"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Peaches<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox" class="form-check-input" name="ingredient" value="raisins"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Raisins<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    </div>
+                        <br><br><br><legend>Grains</legend>
+                <div class="checkbox">
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="flour" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Flour<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" class="form-check-input" name="ingredient" value="hamburger buns" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Hamburger Buns<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" class="form-check-input" name="ingredient" value="pasta" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Pasta<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" class="form-check-input" name="ingredient" value="rice" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Rice<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" class="form-check-input" name="ingredient" value="rice noodles"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Rice Noodles<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" class="form-check-input" name="ingredient" value="tortillas"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Tortillas<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label><input type="checkbox" class="form-check-input" name="ingredient" value="wonton wrappers" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Wonton Wrappers<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                    <br><br><br><legend>Herbs</legend>
+            <div class="checkbox">
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="basil" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Basil<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="cilantro"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Cilantro<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="chives" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chives<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="cumin"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Cumin<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="parsley"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Parsley<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+                <br><br><br><legend>Meats</legend>
+            <div class="checkbox">
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="bacon"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Bacon<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="beef roast"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Beef Roast<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="beef sirloin"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Beef Sirloin<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="chicken breast"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chicken Breast<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="flank steak"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Flank Steak<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="ground pork"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Ground Pork<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="pork"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Pork<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="pork loin"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Pork Loin<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="pork roast"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Pork Roast<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="sausage"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Sausage<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="shrimp"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Shrimp<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="turkey"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Turkey<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+                <br><br><br><legend>Vegetables</legend>
+            <div class="checkbox">
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="bean sprouts"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Bean Sprouts<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="beans"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Beans<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="bell peppers"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Bell Peppers<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="cabbage"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Cabbage<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="corn"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Corn<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="eggplant"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Eggplant<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="garlic"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Garlic<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="ginger"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Ginger<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="green onions"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Green Onions<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="kidney beans"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Kidney Beans<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="mushrooms"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Mushrooms<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="onions"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Onions<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="pepperoncini peppers"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Pepperoncini Peppers<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="potatoes"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Potatoes<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="shallots"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Shallots<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="spinach"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Spinach<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="sweet potatoes"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Sweet Potatoes<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="tomatoes"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Tomatoes<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+                <br><br><br><legend>Oils</legend>
+            <div class="checkbox">
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="canola oil"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Canola Oil<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="chili oil"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chili Oil<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="oil"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Oil<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="olive oil"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Olive Oil<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="sesame oil"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Sesame Oil<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="vegetable oil"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Vegetable Oil<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+                <br><br><br><legend>Seasoning/Sauces/Soups</legend>
+            <div class="checkbox">
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="beef broth" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Beef Broth<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="black bean sauce"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Black Bean Sauce<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="brown sugar" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Brown Sugar<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="cayenne pepper"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Cayenne Pepper<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="chicken broth"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chicken Broth<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="chicken stock"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chicken Stock<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="chili paste"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chili Paste<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="chili pepper"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chili Pepper<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="chili powder"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chili Powder<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="cinnamon"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Cinnamon<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="fish sauce"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Fish Sauce<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="honey" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Honey<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="hot sauce"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Hot Sauce<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="mayonnaise"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Mayonnaise<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="mustard"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Mustard<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="nutmeg"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Nutmeg<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="oregano"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Oregano<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="oyster sauce"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Oyster Sauce<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="pesto"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Pesto<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="ranch"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Ranch<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="red pepper flakes"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Red Pepper Flakes<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="salsa"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Salsa<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="salt"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Salt<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="soy sauce"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Soy Sauce<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="spaghetti sauce"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Spaghetti Sauce<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="sugar"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Sugar<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="tamarind paste"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Tamarind Paste<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="tomato sauce"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Tomato Sauce<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="turmeric"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Turmeric<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="vinegar"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Vinegar<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="worcestershire sauce"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Worcestershire Sauce<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+                <br><br><br><legend>Other</legend>
+            <div class="checkbox">
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="baking powder"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Baking Powder<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="baking soda"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Baking Soda<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="beer"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Beer<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="cardamom"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Cardamom<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="cashews"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Cashews<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="chestnuts"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Chestnuts<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="coconut"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Coconut<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="coffee"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Coffee<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="cornstarch"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Cornstarch<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="molasses"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Molasses<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="peanut butter"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Peanut Butter<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="peanuts"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Peanuts<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="pine nuts"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Pine Nuts<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="rice wine"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Rice Wine<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="sesame seeds"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Sesame Seeds<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="tortilla chips"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Tortilla Chips<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="vanilla"><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>Vanilla<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><input type="checkbox" class="form-check-input" name="ingredient" value="white wine" ><span class="cr"><i class="cr-icon glyphicon glyphicon-cutlery"></i></span>White Wine<br></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br><br>
+                <br><br><br><button class="btn1" onclick="return selectionArray()">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn1" onclick="return uncheckAll()">Clear All</button>
+
+            </div>
+
+            </div>
+<!--                    <br><br><br><input type="submit" value="Submit">-->
+
+                    <!--                </fieldset>-->
+<!--            </form>-->
+        </div>
+    </div>
+</div>
+<!--PURPOSE-->
+<div id = "purpose">
+    <div class="container-fluid bg-grey">
+        <div class="row">
+
+            <div class="col-sm-8">
+                <h2>PURPOSE</h2><br><br>
+                <p>
+                    In the United States, food waste is estimated to be at 30-40% of the total food supply. This means that 133 billion pounds of food, or $161 billion go to waste. All this wasted food leads to the unequal distribution of food across the nation, causing families and children to fall into a pit of hunger while our uneaten foods go to the landfill. Furthermore, so much land, water, labor, energy, and other inputs are put into dealing with food waste, which could be combated in very easy ways.
+                    <br><br>
+                    Not only does food waste affect so many people across the country, but it also affects you directly. eCook is a revolutionary new website that can take the ingredients currently available in your fridge, and produce customized suggestions for recipes. Instead of tossing out extra ingredients and foods in your kitchen, eCook helps you compile a few hand-picked recipes to use your ingredients and paint a beautiful new palette.
+                    <br><br>
+                    Most other recipe suggestion websites ignore your dietary restrictions, but we make sure to take that into care, filtering out recipes that could interfere with your restrictions. We also have an option to sort by preference, which most other websites do not have. You can choose the type of cuisine you would like to enjoy, and we’ll prioritize recipes from that cuisine. We want to form a personal bond with you as you journey through the art of cooking.
+                    <br><br>
+                    eCook makes it fast and easy to find recipes, saving you time from deciding what you want to eat. Cooking from home allows you to promote a healthier lifestyle with less processed foods, be more conscious about the ingredients you are consuming, and helps you save money! Overtime, using your leftover ingredients and cooking from home is more economical than eating at a restaurant, so not only will you be helping hungry families across the nation, but you will also be doing your wallet and your body a favor!
+                    <br><br>
+                    We often ignore the importance and joy of what food can be; life is so much more meaningful when you sit down and have a good meal. Your ingredients are the paints on a palette, and you have the opportunity to create a new world.
+
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>Made By <a href="https://www.vanderbilt.edu/" data-toggle="tooltip" title="Visit Vanderbilt University">Victoria Wang, Sarah Wan, Karman Nagra, and Bohan Jiang</a></p>
+    <a href="#sources" data-toggle="collapse">
+        <span class="glyphicon glyphicon-option-horizontal"></span>
+    </a>
+    <div id="sources" class="collapse">
+        <p><strong>Works Cited</strong></p>
+        <a href="https://www.usda.gov/foodwaste/faqs"><p>Food Waste Statistics</p></a>
+        <a href="https://img.grouponcdn.com/seocms/cUbQTd1uz34dFZynTRmNNE/ramen-noodles-refined-2048x1367"><p>Banner Photo</p></a>
+        <a href="https://www.chaniagastronomy.com/images/slider-cooking-lessons-classes.jpg"><p>Recipe Page Photo</p></a>
+    </div>
+</footer>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"></body>
+</html>

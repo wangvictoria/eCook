@@ -1,0 +1,136 @@
+[
+  {
+
+    "name": "Kung Pao Chicken",
+    "link" : "href=https://www.allrecipes.com/recipe/9027/kung-pao-chicken/?internalSource=streams&referringId=17135&referringContentType=Recipe%20Hub&clickId=st_trending_b",
+    "preference" : "chinese",
+    "ingredients" : ["chicken breast",
+      "white wine",
+      "soy sauce",
+      "sesame oil",
+      "cornstarch",
+      "chili paste",
+      "vinegar",
+      "brown sugar",
+      "green onions",
+      "garlic",
+      "chestnuts",
+      "peanuts"],
+    "restriction" : ["halal", "lactose"]
+  } ,
+
+  {
+    "name" : "Sweet, Sticky and Spicy Chicken",
+    "link" : "href=https://www.allrecipes.com/recipe/143082/sweet-sticky-and-spicy-chicken/?internalSource=streams&referringId=17135&referringContentType=Recipe%20Hub&clickId=st_trending_s",
+    "preference" : "chinese",
+    "ingredients" : ["brown sugar",
+      "honey",
+      "soy sauce",
+      "ginger",
+      "garlic",
+      "hot sauce",
+      "chicken breast",
+      "vegetable oil"],
+    "restriction" : ["peanut", "halal", "kosher", "lactose"]
+  },
+
+  {
+    "name" : "Addictive Sesame Chicken",
+    "link" : "href=https://www.allrecipes.com/recipe/61071/addictive-sesame-chicken/?internalSource=streams&referringId=695&referringContentType=Recipe%20Hub&clickId=st_trending_b",
+    "preference" : "chinese",
+    "ingredients" : ["soy sauce", "sesame oil", "flour", "cornstarch", "baking powder", "baking soda", "canola oil", "chicken breast", "vegetable oil", "chicken broth", "vinegar", "sesame oil", "chili paste", "garlic", "sesame seeds"],
+    "restriction" : ["halal", "lactose", "kosher", "peanut"]
+  },
+
+  {
+    "name" : "Lazy Pork Dumplings",
+    "link" : "href=https://www.allrecipes.com/recipe/276226/lazy-pork-dumplings/?internalSource=streams&referringId=695&referringContentType=Recipe%20Hub&clickId=st_recipes_mades",
+    "preference" : "chinese",
+    "ingredients" : ["flour", "ground pork", "garlic", "ginger", "green onions", "chives", "red pepper flakes", "soy sauce", "sesame oil", "vinegar", "soy sauce", " chicken broth", "vegetable oil"],
+    "restriction" : ["lactose", "kosher", "peanut"]
+  },
+
+  {
+    "name" : "Pan-Fried chinese Pancakes",
+    "link" : "href=https://www.allrecipes.com/recipe/214564/pan-fried-chinese-pancakes/?internalSource=staff%20pick&referringId=695&referringContentType=Recipe%20Hub",
+    "preference" : "chinese",
+    "ingredients" : ["flour", "vegetable oil", "sesame oil", "green onions"],
+    "restriction" : ["lactose", "halal", "kosher", "peanut", "vegetarian"]
+  },
+
+  {
+    "name" : "chinese Roast Pork",
+    "link" : "href=https://www.allrecipes.com/recipe/14769/chinese-roast-pork/?internalSource=rotd&referringId=695&referringContentType=Recipe%20Hub",
+    "preference" : "chinese",
+    "ingredients" : ["pork roast", "soy sauce", "honey", "garlic", "ginger", "cornstarch"],
+    "restriction" : ["lactose", "peanut", "kosher"]
+
+
+  },
+
+  {
+    "name" : "chinese Green Bean Stir-Fry",
+    "link" : "href=https://www.allrecipes.com/recipe/49350/chinese-green-bean-stir-fry/?internalSource=staff%20pick&referringId=695&referringContentType=Recipe%20Hub&clickId=cardslot%205",
+    "preference" : "chinese",
+    "ingredients" : ["vegetable oil", "garlic", "ginger", "black bean sauce"],
+    "restriction" : ["lactose", "peanut", "vegetarian", "halal", "kosher"]
+  },
+
+  {
+    "name" : "Crispy Orange Beef",
+    "link" : "href=https://www.allrecipes.com/recipe/57966/crispy-orange-beef/?internalSource=hub%20recipe&referringId=695&referringContentType=Recipe%20Hub&clickId=cardslot%2015",
+    "preference" : "chinese",
+    "ingredients" : ["beef sirloin", "vinegar", "orange juice", "soy sauce", "rice", "cornstarch", "orange zest", "garlic", "broccoli", "oil"],
+    "restriction" : ["lactose", "halal", "peanut", "kosher"]
+  },
+
+  {
+    "name" : "Egg Drop Soup",
+    "link" : "href=https://www.allrecipes.com/recipe/115965/egg-drop-soup-better-than-restaurant-quality/?internalSource=hub%20recipe&referringId=695&referringContentType=Recipe%20Hub",
+    "preference" : "chinese",
+    "ingredients" : ["chicken broth", "soy sauce", "sesame oil", "eggs", "chives"],
+    "restriction" : ["lactose", "peanut", "halal", "kosher"]
+  },
+
+  {
+    "name" : "Wonton Soup",
+    "link" : "href=https://www.allrecipes.com/recipe/13199/wonton-soup/?internalSource=recipe%20hub&referringId=695&referringContentType=Recipe%20Hub&clickId=cardslot%2022",
+    "preference" : "chinese",
+    "ingredients" : ["pork loin", "shrimp", "rice wine", "soy sauce", "green onions", "ginger", "wonton wrappers", "chicken stock"],
+    "restriction" : ["lactose", "peanut", "kosher"]
+  },
+
+  {
+    "name" : "Pork Chops italiano",
+    "link" : "href=https://www.allrecipes.com/recipe/219005/pork-chops-italiano/?internalSource=staff%20pick&referringId=16767&referringContentType=Recipe%20Hub",
+    "preference" : "italian",
+    "ingredients" : ["olive oil", "mushrooms", "pork loin", "garlic", "onions", "tomatoes", "basil", "bell peppers"],
+    "restriction" : ["lactose", "peanut", "kosher"]
+  },
+
+  {
+    "name" : "Tagliatelle with Coriander Pesto",
+    "link" : "href=https://www.allrecipes.com/recipe/217292/tagliatelle-with-coriander-pesto/?internalSource=staff%20pick&referringId=16767&referringContentType=Recipe%20Hub",
+    "preference" : "italian",
+    "ingredients" : ["cilantro", "pine nuts", "feta cheese", "olive oil", "pasta", "olive oil"],
+    "restriction" : ["halal", "kosher", "vegetarian", "peanut"]
+  },
+
+  {
+    "name" : "Original Homemade italian Beef",
+    "link" : "href=https://www.allrecipes.com/recipe/91597/original-homemade-italian-beef/?internalSource=staff%20pick&referringId=16767&referringContentType=Recipe%20Hub&clickId=cardslot%206",
+    "preference" : "italian",
+    "ingredients" : ["beef roast", "pepperoncini peppers", "hamburger buns"],
+    "restriction" : ["lactose", "halal", "kosher", "peanut"]
+  },
+
+  {
+    "name" : "Bow Ties with Sausage, Tomatoes, and Cream",
+    "link" : "href=https://www.allrecipes.com/recipe/26257/bow-ties-with-sausage-tomatoes-and-cream/?internalSource=hub%20recipe&referringId=16767&referringContentType=Recipe%20Hub",
+    "preference" : "italian",
+    "ingedients" : null,
+    "restriction" : null
+  }
+
+
+]
