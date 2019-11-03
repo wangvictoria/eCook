@@ -103,43 +103,9 @@ $(document).ready(function(){
             });
         } // End if
     });
-})
-// function ValidatePetSelection()
-// {
-//     var checkboxes = document.getElementsByName("favorite_pet");
-//     var numberOfCheckedItems = 0;
-//     for(var i = 0; i < checkboxes.length; i++)
-//     {
-//         if(checkboxes[i].checked)
-//             numberOfCheckedItems++;
-//     }
-//     if(numberOfCheckedItems > 2)
-//     {
-//         alert("You can't select more than two favorite pets!");
-//         return false;
-//     }
-// }
-
-var ingredients = [];
-var diet = [];
-var preference = [];
-
-var allIngredients = [];
-var allRestrictions = [];
-var myPreference;
-
-var allIngredients = [];
-var allRestrictions = [];
-var myPreference = "kosher";
-
-var recommendList = [];
+});
 
 function selectionArray(){
-    ingredients = [];
-    diet = [];
-    preference = [];
-    ingredients = [];
-    diet = [];
     const checkboxesIng = document.getElementsByName("ingredient");
     for(let i = 0; i < checkboxesIng.length; i++) {
         if (checkboxesIng[i].checked) {
@@ -155,6 +121,7 @@ function selectionArray(){
     const checkboxesPref = document.getElementsByName("preference");
     for(let i = 0; i < checkboxesPref.length; i++) {
         if (checkboxesPref[i].checked) {
+<<<<<<< HEAD
             preference.push(checkboxesPref[i].value);
         }
     }
@@ -165,8 +132,16 @@ function selectionArray(){
     // }
     // alert(x);
 
+=======
+            myPreference.push("Chinese");
+        } else {
+            myPreference.push("Chinese");
+        }
+    }
+
+>>>>>>> 539d683a15fd46af4b021e23eb499d0cd10b7d7a
     recommend();
-    window.open("recipes.html");
+    window.open("recipes.html", '_self');
 }
 function uncheckAll() {
     $('input[type="checkbox"]:checked').prop('checked', false);
@@ -180,15 +155,8 @@ function shuffle(array) {
 }
 
 function recommend(){
+    alert(allIngredients.length);
     selectValid();
-    printRecommend();
-    alert(recommendList.length);
-
-    shuffle(reciP);
-
-    while (recommendList.length != 0){
-        recommendList.pop();
-    }
 }
 
 function selectValid(){
@@ -201,6 +169,7 @@ function selectValid(){
             }
         }
     }
+    alert(recommendList.length);
 }
 
 function isValid(index){
@@ -237,30 +206,33 @@ function isPref(index){
     return reciP[index].preference == myPreference;
 }
 
-function printRecommend(){
-    // let r = document.getElementById("recipes");
-    // r.innerHTML += "<div class=\"col-sm-4\"> <div class=\"thumbnail\"> <p><strong>Name of Recipe</strong></p> <p>Dairy-Free</p> <p>Ingredients</p> <p>Cuisine</p> <button class=\"btn\">Link to Recipe</button> </div> </div>";
-    // var panel1 = document.createElement("div");   // Create a <button> element
-    // panel1.innerHTML = "CLICK ME";                   // Insert text
-    // document.getElementById("allpanels").appendChild(panel1);               // Append <button> to <body>
-}
-
-function linktoURl(index){
-    var temp = reciP[index].link.substring(5);
+function linktoURL(index){
+    let temp = recommendList[index].link.substring(5);
     window.open(temp);
 }
 
 window.onload = function(){
-    document.getElementById('helpme').innerHTML = "        <div class=\"col-sm-4\">\n" +
-        "            <div class=\"thumbnail\">\n" +
-        "                <p><strong>It worked?</strong></p>\n" +
-        "                <p>Dairy-Free</p>\n" +
-        "                <p>Ingredients</p>\n" +
-        "                <p>Cuisine</p>\n" +
-        "                <button class=\"btn\">Link to Recipe</button>\n" +
-        "            </div>\n" +
-        "        </div>";
+    let r = document.getElementById('KungPao');
+    for (let i = 0; i < recommendList.length; i++){
+        let restrest = "";
+        for (let j = 0; j < recommendList[i].restriction.length - 1; j++){
+            restrest += recommendList[i].restriction[j] + ", ";
+        }
+        restrest += recommendList[i].restriction[recommendList[i].restriction.length - 1];
+        r.innerHTML += "<div class=\"col-sm-4\">\n" +
+            "<div class=\"thumbnail\">\n" +
+            "<p><strong>" + recommendList[i].name +"</strong></p>\n"+
+            "<p>" + restrest + "</p>\n" +
+            "<p>" + recommendList[i].preference + "</p>\n" +
+            "<button class=\"btn\" onclick=\"linktoURL("+ i + ")\">Link to Recipe</button>\n" +
+            "</div>\n" +
+            "</div>\n";
+    }
 };
+
+function getRealPreference(){
+
+}
 
 var reciP = [
     {
@@ -772,19 +744,9 @@ var reciP = [
 }
 ];
 
-// notes for SARAHHHHHHHH
-// more info https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript
-// access object using index
-/* for (i = 0; i < 100; ++i) {
-    var Obj1 = reciPObj(0);
-    // access fields
-    Obj1.name;
-    Obj1.link;
-    Obj1.preference;
-    Obj1.ingredients;
-    Obj1.restriction;
-
-}
-*/
+var allIngredients = [];
+var allRestrictions = [];
+var myPreference;
+var recommendList = [];
 
 var ingredientList = ["apples", "avocados", "bacon", "baking powder", "baking soda", "basil", "bean sprouts", "beans", "beef roast", "beef sirloin", "beer",  "bell peppers", "black bean sauce", "black beans", "bread", "broccoli", "brown sugar", "butter", "cabbage", "canola oil", "cardamom", "cashews", "cayenne pepper", "cheese", "chestnuts", "chicken breast", "chicken broth", "chicken stock", "chili oil", "chili paste", "chili pepper", "chili powder", "chives", "cilantro", "cinnamon", "coconut", "coconut milk", "coffee", "condensed milk", "corn", "cornstarch", "cumin", "eggplant", "eggs", "feta cheese", "fish sauce", "flank steak", "flour", "garlic", "ginger", "green onions", "ground pork", "hamburger buns", "heavy cream", "honey", "hot sauce", "kidney beans", "lemon", "lime", "mango", "mayonnaise", "milk", "molasses", "mushrooms", "mustard", "nutmeg", "oil", "olive oil", "onions", "orange juice", "orange zest", "oregano", "oyster sauce", "parsley", "pasta", "peaches", "peanut butter", "peanuts", "pepperoncini peppers", "pesto", "pine nuts", "pork", "pork loin", "pork roast", "potatoes", "raisins", "ranch", "red pepper flakes", "rice", "rice noodles", "rice wine", "salsa", "salt", "sausage", "sesame oil", "sesame seeds", "shallots", "shrimp", "soy sauce", "spaghetti sauce", "spinach", "sugar", "sweet potatoes", "tamarind paste", "tomato sauce", "tomatoes", "tortilla chips", "tortillas", "turmeric", "turkey", "vanilla", "vegetable oil", "vinegar", "white wine", "wonton wrappers", "worcestershire sauce"];
