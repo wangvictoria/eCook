@@ -77,6 +77,8 @@ $(document).ready(function(){
         } // End if
     });
 })
+
+
 $(document).ready(function(){
 // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -242,7 +244,22 @@ function printRecommend(){
     // document.getElementById("allpanels").appendChild(panel1);               // Append <button> to <body>
 }
 
+function linktoURl(index){
+    var temp = reciP[index].link.substring(5);
+    window.open(temp);
+}
 
+window.onload = function(){
+    document.getElementById('helpme').innerHTML = "        <div class=\"col-sm-4\">\n" +
+        "            <div class=\"thumbnail\">\n" +
+        "                <p><strong>It worked?</strong></p>\n" +
+        "                <p>Dairy-Free</p>\n" +
+        "                <p>Ingredients</p>\n" +
+        "                <p>Cuisine</p>\n" +
+        "                <button class=\"btn\">Link to Recipe</button>\n" +
+        "            </div>\n" +
+        "        </div>";
+};
 
 var reciP = [
     {
