@@ -155,11 +155,11 @@ function selectionArray(){
     const checkboxesPref = document.getElementsByName("preference");
     for(let i = 0; i < checkboxesPref.length; i++) {
         if (checkboxesPref[i].checked) {
-            preference.push(checkboxesPref[i].value)
+            preference.push(checkboxesPref[i].value);
         }
     }
 
-    // var x = ""
+    // var x = "";
     // for (let i = 0; i < preference.length; i++){
     //     x = x + preference[i];
     // }
@@ -170,6 +170,7 @@ function selectionArray(){
 }
 function uncheckAll() {
     $('input[type="checkbox"]:checked').prop('checked', false);
+    $('input[type="radio"]:checked').prop('checked', false);
 }
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
