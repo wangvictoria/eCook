@@ -111,6 +111,9 @@ $(document).ready(function(){
 });
 
 function selectionArray(){
+    allIngredients.splice(0, allIngredients.length);
+    allRestrictions.splice(0, allRestrictions.length);
+    myPreference.splice(0, myPreference.length);
     const checkboxesIng = document.getElementsByName("ingredient");
     for(let i = 0; i < checkboxesIng.length; i++) {
         if (checkboxesIng[i].checked) {
@@ -146,6 +149,7 @@ function shuffle(array) {
 }
 
 function recommend(){
+    recommendList.splice(0, recommendList.length);
     for (let i = 0; i < reciP.length; i++){
         if (isValid(i)){
             if (isPref(i)) {
@@ -163,7 +167,6 @@ function isValid(index){
         for (let j = 0; j < allIngredients.length; j++) {
             if (reciP[index].ingredients[i] === allIngredients[j]){
                 found = true;
-                break;
             }
         }
         if (!found){
@@ -176,7 +179,6 @@ function isValid(index){
         for (let j = 0; j < reciP[index].restriction.length; j++) {
             if (allRestrictions[i] === reciP[index].restriction[j]){
                 found = true;
-                break;
             }
         }
         if (!found){
@@ -197,21 +199,27 @@ function linktoURL(index){
 }
 
 window.onload = function(){
-    let r = document.getElementById('KungPao');
-    for (let i = 0; i < Whatever.length; i++){
-        let restrest = "";
-        for (let j = 0; j < Whatever[i].restriction.length - 1; j++){
-            restrest += mapRestriction(Whatever[i].restriction[j]) + ", ";
+    if (Whatever.length === 0) {
+        let r = document.getElementById('KungPao');
+        r.innerHTML += "<h3>Sorry, no matches were found.</h3>";
+    }
+    else {
+        let r = document.getElementById('KungPao');
+        for (let i = 0; i < Whatever.length; i++) {
+            let restrest = "";
+            for (let j = 0; j < Whatever[i].restriction.length - 1; j++) {
+                restrest += mapRestriction(Whatever[i].restriction[j]) + ", ";
+            }
+            restrest += mapRestriction(Whatever[i].restriction[Whatever[i].restriction.length - 1]);
+            r.innerHTML += "<div class=\"col-sm-4\">\n" +
+                "<div class=\"thumbnail\">\n" +
+                "<p><strong>" + Whatever[i].name + "</strong></p>\n" +
+                "<p>" + restrest + "</p>\n" +
+                "<p>" + mapPreferences(Whatever[i].preference) + "</p>\n" +
+                "<button class=\"btn\" onclick=\"linktoURL(" + i + ")\">Link to Recipe</button>\n" +
+                "</div>\n" +
+                "</div>\n";
         }
-        restrest += mapRestriction(Whatever[i].restriction[Whatever[i].restriction.length - 1]);
-        r.innerHTML += "<div class=\"col-sm-4\">\n" +
-            "<div class=\"thumbnail\">\n" +
-            "<p><strong>" + Whatever[i].name +"</strong></p>\n"+
-            "<p>" + restrest + "</p>\n" +
-            "<p>" + mapPreferences(Whatever[i].preference) + "</p>\n" +
-            "<button class=\"btn\" onclick=\"linktoURL("+ i + ")\">Link to Recipe</button>\n" +
-            "</div>\n" +
-            "</div>\n";
     }
 };
 
@@ -237,7 +245,7 @@ function mapPreferences(oldPref){
     } else if (oldPref === "mexican"){
         return "Mexican";
     } else if (oldPref === "southern"){
-        return "Souther";
+        return "Southern";
     } else {
         return "Thai";
     }
