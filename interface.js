@@ -161,7 +161,7 @@ function isValid(index){
     for (let i = 0; i < reciP[index].ingredients.length; i++){
         let found = false;
         for (let j = 0; j < allIngredients.length; j++) {
-            if (reciP[index].ingredients[i] == allIngredients[j]){
+            if (reciP[index].ingredients[i] === allIngredients[j]){
                 found = true;
                 break;
             }
@@ -174,7 +174,7 @@ function isValid(index){
     for (let i = 0; i < allRestrictions.length; i++){
         let found = false;
         for (let j = 0; j < reciP[index].restriction.length; j++) {
-            if (allRestrictions[i] == reciP[index].restriction[j]){
+            if (allRestrictions[i] === reciP[index].restriction[j]){
                 found = true;
                 break;
             }
@@ -188,7 +188,7 @@ function isValid(index){
 }
 
 function isPref(index){
-    return reciP[index].preference == myPreference[0];
+    return reciP[index].preference === myPreference[0];
 }
 
 function linktoURL(index){
@@ -216,13 +216,13 @@ window.onload = function(){
 };
 
 function mapRestriction(oldRest){
-    if (oldRest == "lactose"){
+    if (oldRest === "lactose"){
         return "Lactose-Free";
-    } else if (oldRest == "vegetarian"){
+    } else if (oldRest === "vegetarian"){
         return "Vegetarian";
-    } else if (oldRest == "peanut"){
+    } else if (oldRest === "peanut"){
         return "Peanut-Free";
-    } else if (oldRest == "kosher"){
+    } else if (oldRest === "kosher"){
         return "Kosher";
     } else {
         return "Halal";
@@ -230,20 +230,20 @@ function mapRestriction(oldRest){
 }
 
 function mapPreferences(oldPref){
-    if (oldPref == "chinese"){
+    if (oldPref === "chinese"){
         return "Chinese";
-    } else if (oldPref == "italian"){
+    } else if (oldPref === "italian"){
         return "Italian";
-    } else if (oldPref == "mexican"){
+    } else if (oldPref === "mexican"){
         return "Mexican";
-    } else if (oldPref == "southern"){
+    } else if (oldPref === "southern"){
         return "Souther";
     } else {
         return "Thai";
     }
 }
 
-var reciP = [
+const reciP = [
     {
 
         "name": "Kung Pao Chicken",
@@ -296,7 +296,7 @@ var reciP = [
     },
 
     {
-        "name" : "Pan-Fried chinese Pancakes",
+        "name" : "Pan-Fried Chinese Pancakes",
         "link" : "href=https://www.allrecipes.com/recipe/214564/pan-fried-chinese-pancakes/?internalSource=staff%20pick&referringId=695&referringContentType=Recipe%20Hub",
         "preference" : "chinese",
         "ingredients" : ["flour", "vegetable oil", "sesame oil", "green onions"],
@@ -304,7 +304,7 @@ var reciP = [
     },
 
     {
-        "name" : "chinese Roast Pork",
+        "name" : "Chinese Roast Pork",
         "link" : "href=https://www.allrecipes.com/recipe/14769/chinese-roast-pork/?internalSource=rotd&referringId=695&referringContentType=Recipe%20Hub",
         "preference" : "chinese",
         "ingredients" : ["pork roast", "soy sauce", "honey", "garlic", "ginger", "cornstarch"],
@@ -313,7 +313,7 @@ var reciP = [
     },
 
     {
-        "name" : "chinese Green Bean Stir-Fry",
+        "name" : "Chinese Green Bean Stir-Fry",
         "link" : "href=https://www.allrecipes.com/recipe/49350/chinese-green-bean-stir-fry/?internalSource=staff%20pick&referringId=695&referringContentType=Recipe%20Hub&clickId=cardslot%205",
         "preference" : "chinese",
         "ingredients" : ["vegetable oil", "garlic", "ginger", "black bean sauce"],
@@ -345,7 +345,7 @@ var reciP = [
     },
 
     {
-        "name" : "Pork Chops italiano",
+        "name" : "Pork Chops Italiano",
         "link" : "href=https://www.allrecipes.com/recipe/219005/pork-chops-italiano/?internalSource=staff%20pick&referringId=16767&referringContentType=Recipe%20Hub",
         "preference" : "italian",
         "ingredients" : ["olive oil", "mushrooms", "pork loin", "garlic", "onions", "tomatoes", "basil", "bell peppers"],
@@ -362,7 +362,7 @@ var reciP = [
     },
 
     {
-        "name" : "Original Homemade italian Beef",
+        "name" : "Original Homemade Italian Beef",
         "link" : "href=https://www.allrecipes.com/recipe/91597/original-homemade-italian-beef/?internalSource=staff%20pick&referringId=16767&referringContentType=Recipe%20Hub&clickId=cardslot%206",
         "preference" : "italian",
         "ingredients" : ["beef roast", "pepperoncini peppers", "hamburger buns"],
@@ -411,7 +411,7 @@ var reciP = [
     },
 
     {
-        "name" : "Tender italian Baked Chicken",
+        "name" : "Tender Italian Baked Chicken",
         "link" : "href=https://www.allrecipes.com/recipe/52005/tender-italian-baked-chicken/?internalSource=recipe%20hub&referringId=16767&referringContentType=Recipe%20Hub&clickId=cardslot%2032",
         "preference" : "italian",
         "ingredients" : ["mayonnaise", "cheese", "garlic", "bread" , "chicken breast"],
@@ -451,7 +451,7 @@ var reciP = [
     },
 
     {
-        "name" : "mexican Rice",
+        "name" : "Mexican Rice",
         "link" : "href=https://www.allrecipes.com/recipe/27072/mexican-rice-ii/?internalSource=hub%20recipe&referringId=728&referringContentType=Recipe%20Hub",
         "preference" : "mexican",
         "ingredients" : ["vegetable oil", "rice", "garlic", "cumin", "onions", "tomato sauce", "chicken broth"],
